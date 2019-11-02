@@ -10,5 +10,5 @@ public class CarroRequest {
     private String nome;
     private int ano;
     private BigDecimal valor;
-    private Montadora montadora;
+    private Long montadoraId;
 }

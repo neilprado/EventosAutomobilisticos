@@ -9,5 +9,5 @@ import java.util.List;
 public class MontadoraRequest {
     private String nome;
     private String pais;
-    private List<Carro> carros;
+    private Long carroId;
 }
