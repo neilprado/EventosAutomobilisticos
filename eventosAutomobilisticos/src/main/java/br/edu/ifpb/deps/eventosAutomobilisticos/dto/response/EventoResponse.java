@@ -25,10 +25,10 @@ public class EventoResponse {
         eventoResponse.setDataEvento(evento.getDataEvento());
         eventoResponse.setId(evento.getId());
         eventoResponse.setIngressoValor(evento.getIngressoValor());
-        eventoResponse.setMontadoraId(evento.getMontadoras().get().getId());
+        eventoResponse.setMontadoraId(evento.getMontadora().getId());
         eventoResponse.setNome(evento.getNome());
         eventoResponse.setPais(evento.getPais());
-        eventoResponse.setUsuarioId(evento.getUsuarios().get().getId());
+        eventoResponse.setUsuarioId(evento.getUsuario().getId());
 
         return eventoResponse;
     }
@@ -41,10 +41,10 @@ public class EventoResponse {
             eventoResponse.setDataEvento(evento.getDataEvento());
             eventoResponse.setId(evento.getId());
             eventoResponse.setIngressoValor(evento.getIngressoValor());
-            eventoResponse.setMontadoraId(evento.getMontadoras().get().getId());
+            eventoResponse.setMontadoraId(evento.getMontadora().getId());
             eventoResponse.setNome(evento.getNome());
             eventoResponse.setPais(evento.getPais());
-            eventoResponse.setUsuarioId(evento.getUsuarios().get().getId());
+            eventoResponse.setUsuarioId(evento.getUsuario().getId());
 
             return eventoResponse;
         });

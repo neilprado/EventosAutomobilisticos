@@ -14,7 +14,6 @@ public class MontadoraResponse {
     public static MontadoraResponse from(Montadora montadora){
         MontadoraResponse response = new MontadoraResponse();
 
-        response.setCarroId(montadora.getCarros().get().getId());
         response.setId(montadora.getId());
         response.setNome(montadora.getNome());
         response.setPais(montadora.getPais());
@@ -26,7 +25,6 @@ public class MontadoraResponse {
         Page<MontadoraResponse> responses = montadoras.map(montadora -> {
             MontadoraResponse response = new MontadoraResponse();
 
-            response.setCarroId(montadora.getCarros().get().getId());
             response.setId(montadora.getId());
             response.setNome(montadora.getNome());
             response.setPais(montadora.getPais());
