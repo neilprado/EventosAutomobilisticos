@@ -9,4 +9,5 @@ public class UsuarioRequest {
     private String nome;
     private Date dataNascimento;
     private String email;
+    private String senha;
 }
