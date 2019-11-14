@@ -12,6 +12,7 @@ public class UsuarioResponse {
     private String nome;
     private Date dataNascimento;
     private String email;
+    private String senha;
 
     public static UsuarioResponse from(Usuario usuario){
         UsuarioResponse usuarioResponse = new UsuarioResponse();
@@ -20,6 +21,7 @@ public class UsuarioResponse {
         usuarioResponse.setEmail(usuario.getEmail());
         usuarioResponse.setId(usuario.getId());
         usuarioResponse.setNome(usuario.getNome());
+        usuarioResponse.setSenha(usuario.getSenha());
 
         return usuarioResponse;
     }
@@ -32,6 +34,7 @@ public class UsuarioResponse {
             usuarioResponse.setEmail(usuario.getEmail());
             usuarioResponse.setId(usuario.getId());
             usuarioResponse.setNome(usuario.getNome());
+            usuarioResponse.setSenha(usuario.getSenha());
 
             return usuarioResponse;
         });
